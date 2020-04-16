@@ -32,7 +32,7 @@ import static java.awt.SystemColor.info;
  */
 @RestController
 @RequestMapping("/eduservice/comment")
-@CrossOrigin
+//@CrossOrigin
 public class EduCommentController {
 
     @Autowired

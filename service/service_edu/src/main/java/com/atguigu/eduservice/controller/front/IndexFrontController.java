@@ -18,7 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/eduservice/indexfront")
-@CrossOrigin
+//@CrossOrigin
 public class IndexFrontController {
     //查询热门课程课和老师
     @Autowired

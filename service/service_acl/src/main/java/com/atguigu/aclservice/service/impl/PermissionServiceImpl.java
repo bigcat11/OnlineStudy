@@ -45,9 +45,9 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         wrapper.orderByDesc("id");
         List<Permission> permissionList = baseMapper.selectList(wrapper);
 
-        List<Permission> result = bulid(permissionList);
+       // List<Permission> result = bulid(permissionList);
 
-        return result;
+        return permissionList;
     }
 
     //根据角色获取菜单
@@ -77,8 +77,8 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
         }
 
 
-        List<Permission> permissionList = bulid(allPermissionList);
-        return permissionList;
+    //    List<Permission> permissionList = bulid(allPermissionList);
+        return allPermissionList;
     }
 
     //给角色分配权限
